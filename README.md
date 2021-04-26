@@ -1,4 +1,4 @@
-# MyReads
+# MyReads | [![Netlify Status](https://api.netlify.com/api/v1/badges/344ade27-a34f-4901-8dfb-0491937e5375/deploy-status)](https://app.netlify.com/sites/my-react-bookshelf/deploys)
 
 MyReads is a bookshelf application that allows a user to select and categorize books they have read, are currently reading, or want to read. This project uses React to build the application and an API server and client library that is used to persist information as the user interacts with the application.
 
