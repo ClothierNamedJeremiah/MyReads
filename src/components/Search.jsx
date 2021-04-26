@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
 import PropTypes from 'prop-types';
 
-import * as BooksAPI from './BooksAPI'
+import * as BooksAPI from '../api/BooksAPI'
 import ListBooks from './ListBooks'
 
 

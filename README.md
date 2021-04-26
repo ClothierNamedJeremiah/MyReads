@@ -22,7 +22,7 @@ Home Page | Search Page
 ```bash
 ├── CONTRIBUTING.md
 ├── README.md - This file.
-├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
+├── SEARCH_TERMS.md # The whitelisted short collection of available search terms
 ├── package.json # npm package manager file
 ├── public
 │   ├── favicon.ico # React Icon
@@ -30,7 +30,7 @@ Home Page | Search Page
 └── src
     ├── App.css # Styles for the app
     ├── App.js # Root of the app
-    ├── BooksAPI.js # A JavaScript API. Instructions for the methods are below.
+    ├── BooksAPI.js
     ├── icons # Images for the app
     │   ├── add.svg
     │   ├── arrow-back.svg
@@ -39,14 +39,9 @@ Home Page | Search Page
     └── index.js # Used for DOM rendering only.
 ```
 
-## Additional Features
-* Rating books
-* Bulk Move (from one category to another)
-
-
 ## Backend Server
 
-To simplify your development process, I have used a backend server. The provided file [`BooksAPI.js`](src/BooksAPI.js) contains the methods needed to perform necessary operations on the backend:
+[`BooksAPI.js`](src/BooksAPI.js) contains the methods needed to perform necessary operations on the backend:
 
 * [`getAll`](#getall)
 * [`update`](#update)
@@ -88,4 +83,4 @@ search(query)
 * These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
 
 ## Important
-The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
+The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend.

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Book from './Book.js'
+import Book from './Book.jsx'
 
 // Using a stateless functional component because a 'BookList' only renders an ordered list of 'Books'
 const ListBooks = (props) => {

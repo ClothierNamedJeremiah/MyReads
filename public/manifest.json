@@ -1,0 +1,21 @@
+
+{
+  "short_name": "My Reads",
+  "name": "A bookshelf application that allows a user to select and categorize books they have read, are currently reading, or want to read.",
+  "description": "Organize all the books on your bookshelf",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2e7c31",
+  "background_color": "#ffffff"
+}

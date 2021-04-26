@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
-import * as BooksAPI from './BooksAPI'
-import './App.css'
+import * as BooksAPI from '../api/BooksAPI'
+import '../styles/App.css'
 
 import Search from './Search'
 import Bookshelf from './Bookshelf'
@@ -76,7 +76,14 @@ class BooksApp extends React.Component {
               <div>
                 {Object.keys(shelves).map(shelve => {
                   const [title, status] = shelves[shelve];
-                  return <Bookshelf key={shelve} title={title} books={this.state.books.filter(book => book.status === status)} />
+                  return (
+                    <Bookshelf
+                      key={shelve}
+                      title={title}
+                      books={this.state.books.filter(book => book.status === status)}
+                      handleSelect={this.handleSelect}
+                    />
+                  );
                 })}
               </div>
             </div>
